@@ -1,0 +1,16 @@
+/code/cximage701_full/CxImage/CxImageDLL/*.user
+/code/cximage701_full/CxImage/CxImageDLL/Debug/*.tlog
+/code/cximage701_full/bin/*.ilk
+/code/cximage701_full/demo/Unicode_Release
+/code/cximage701_full/demo/Debug
+/code/cximage701_full/CxImage/Debug
+/code/cximage701_full/CxImage/*.user
+/code/cximage701_full/demo/*.user
+/code/cximage701_full/jasper/*.user
+/code/cximage701_full/jbig/*.user
+/code/cximage701_full/libpsd/*.user
+/code/cximage701_full/mng/*.user
+/code/cximage701_full/png/*.user
+/code/cximage701_full/raw/*.user
+/code/cximage701_full/tiff/*.user
+/code/cximage701_full/zlib/*.user

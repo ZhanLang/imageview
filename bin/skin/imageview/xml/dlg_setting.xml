@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<SOUI name="window" title="极客桌面搜索" bigIcon="ICON_LOGO:32" smallIcon="ICON_LOGO:16" width="620" height="400" margin="1,5,5,5" wndType="8" toolWindow="1" alpha="255" translucent="1">
+	<root skin="" cache="1">
+    <window skin="" pos="0,0,-0,-0">
+      <window name="title_wind" pos="0,0,-0,29" show="1" skin="skin_header_img"  alpha="255">
+        <caption name="caption" pos="0,0,-0,-0" show="1"   cache="1">
+          <icon src="ICON_LOGO:16" pos="4,7"/>
+          <text name="text_title" pos="25,0,-0,-0" align="left" font="face:微软雅黑,size:15" colorText="#FFFFFFFF" dotted="1">设置 - 快眼看图王</text>
+          <imgbtn name="btn_close" skin="skin_setting_close"  pos="-41,0" id="2"/>
+        </caption>
+      </window>
+
+      <window pos="0,[,-0,-0" skin="skin_settingbg_inside">
+        <tabctrl pos="1,1,-1,-1" tabHeight="35" tabWidth="120" tabAlign="left" skin="skin_thumbnails_bg" tabSkin="skin_tabctrl_tab" frameSkin="skin_white_bk" animateSteps="10" drawFocusRect="0" font="face:微软雅黑,size:13">
+          <page title="文件关联">
+            <check name=".BMP" pos="25,10" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">BMP</check>
+            <check name=".WBMP" pos="[+25,10" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">WBMP</check>
+            <check name=".JPG" pos="[+25,10" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">JPG</check>
+            <check name=".JPEG" pos="[+25,10" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">JPEG</check>
+            <check name=".JPE" pos="[+25,10" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">JPE</check>
+            <check name=".PNG" pos="[+25,10" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">PNG</check>
+            <check name=".JP2" pos="25,[+10" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">JP2</check>
+            <check name=".PSD" pos="[+33,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">PSD</check>
+            <check name=".GIF" pos="[+40,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">GIF</check>
+            <check name=".DDS" pos="[+27,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">DDS</check>
+            <check name=".PCX" pos="[+27,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">PCX</check>
+            <check name=".XPM" pos="[+22,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">XPM</check>
+
+            <check name=".TGA" pos="25,[+10" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">TGA</check>
+            <check name=".XBM" pos="[+27,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">XBM</check>
+            <check name=".TIF" pos="[+38,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">TIF</check>
+            <check name=".PNM" pos="[+30,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">PNM</check>
+            <check name=".SKA" pos="[+23,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">SKA</check>
+            <check name=".WEBP" pos="[+22,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">WEBP</check>
+
+
+            <check name=".CUT" pos="25,[+10" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">CUT</check>
+            <check name=".ICO" pos="[+27,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">ICO</check>
+            <check name=".HDR" pos="[+42,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">HDR</check>
+            <check name=".JNG" pos="[+22,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">JNG</check>
+            <check name=".ARW" pos="[+29,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">ARW</check>
+            <check name=".TIFF" pos="[+17,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">TIFF</check>
+
+            <check name=".KOA" pos="25,[+10" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">KOA</check>
+            <check name=".MNG" pos="[+25,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">MNG</check>
+            <check name=".PCD" pos="[+32,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">PCD</check>
+            <check name=".RAS" pos="[+22,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">RAS</check>
+            <check name=".J2K" pos="[+29,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">J2K</check>
+            <check name=".JPC" pos="[+27,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">JPC</check>
+
+            <check name=".IFF" pos="25,[+10" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">IFF</check>
+            <check name=".G3" pos="[+35,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">G3</check>
+            <check name=".SGI" pos="[+47,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">SGI</check>
+            <check name=".EXR" pos="[+27,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">EXR</check>
+            <check name=".WDP" pos="[+33,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">WDP</check>
+            <check name=".PFM" pos="[+17,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">PFM</check>
+
+            <check name=".PCT" pos="25,[+10" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">PCT</check>
+            <check name=".RAW" pos="[+28,{" skin="skin_sys_checkbox" checked="1" drawFocusRect="0">RAW</check>
+
+
+            <imgbtn name="select_all" pos="25,250" skin="skin_batch_bg">全选</imgbtn>
+            <imgbtn name="unselect_all" pos="[+20,250" skin="skin_batch_bg">反选</imgbtn>
+
+
+            <imgbtn name="ok" pos="250,320" skin="skin_batch_bg_ex">确定</imgbtn>
+            <imgbtn name="cancel" pos="[+10,320" skin="skin_batch_bg">取消</imgbtn>
+            <imgbtn name="apply" pos="[+10,320" skin="skin_batch_bg">应用</imgbtn>
+          </page>
+          
+          <page title="升级">
+            <text pos="10,52"> 当前版本号：</text>
+            <text name="version" pos="[,52">1.0.0.1</text>
+            <imgbtn name="check_update" pos="250,50,450,80" skin="skin_check_update" colorText="#FFFFFF">立即升级到最新版本</imgbtn>
+          </page>
+          <page title="关于">
+            <img name="btn_close" skin="skin_erweima"  pos="0,0" id="2"/>
+            <text pos="0,[" width="258" align="center">请关注我们</text>
+          </page>
+        </tabctrl>
+      </window>
+    </window>
+	</root>
+</SOUI>

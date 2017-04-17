@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<SOUI resizable="1">
+	<root cache="1">
+				<page name="page_image"  pos="0,0,-0,-0" show="1">
+         
+            <imageview name="image_view" pos="0,0,-0,-0">
+              <imagecanvas name="imagecanvas" cursor="hand"  >
+              </imagecanvas>
+
+              <multiframepanel name="multiframe" cursor="hand" width="246" height="68" valign="0x10" halign="0x01" distx="20" disty="0" skin="skin_multiframe_bg" layeredWindow="1"  alpha="255" show="1">
+                <window pos="40,18,-40,-18"  align="right">
+                  <imgbtn name="btn_multiframe_prev" skin="skin_multiframe_prev" />
+                  <imgbtn name="btn_multiframe_play" skin="skin_multiframe_play"  enable="0"/>
+                  <imgbtn name="btn_multiframe_pause"  pos="{,0" skin="skin_multiframe_pause" visible="0"/>
+                  <imgbtn name="btn_multiframe_next" skin="skin_multiframe_next" />
+
+                  <text name="txt_frame_count" pos="|+20,0,-5,-3" align="center" font="face:微软雅黑,size:15" msgTransparent="1"></text>
+                  <imgbtn name="btn_multiframe_save" pos="|+30,0" skin="skin_multiframe_save" visible="0"/>
+                  <imgbtn name="btn_multiframe_saveall" skin="skin_multiframe_saveall" visible="0"/>
+                </window>
+              </multiframepanel>
+            </imageview>
+
+            <window name="pane_left" pos="0,20, 115, -20">
+              <imgbtn name="btn_bar_prev" skin="skin_btn_prev" pos="0,|-60"  cache="1" visible="1" animate="1"/>
+            </window>
+
+            <window name="pane_right" pos="-115,20, -0, -20">
+              <imgbtn name="btn_bar_next" skin="skin_btn_next" pos="0,|-60"  cache="1" visible="1" animate="1"/>
+            </window>
+
+            <zoomratio name="zoomratio" skin="skin_zoomratio" pos="|-64,|-32,|+64,|+32" msgTransparent="1" visible="1">
+              <window  pos="15,10,-31,-30">
+                <text name="txt_zoomratio" pos="0,0,-0,-0" font="face:微软雅黑,size:17" align="center" colorText="#FFFFFF"></text>
+              </window>
+            </zoomratio>
+
+            <window name="pane_bar" pos="200,-38,-200,-0" cache="1" layeredWindow="1" >
+              <window name="ctrl_bar" skin="skin_bk_40" pos="0,0,-0,-0"  alpha="50" visible="1">
+                <imgbtn name="bar_orignalsize" skin="skin_btn_orignalsize" pos="|-206,|-15" visible="0"/>
+                <imgbtn name="bar_fitsize" skin="skin_btn_fitsize" pos="|-206,|-15"/>
+                <imgbtn name="bar_zoomin" skin="skin_btn_zoomin" pos="[,|-15"/>
+                <imgbtn name="bar_zoomout" skin="skin_btn_zoomout" pos="[,|-15"/>
+                <imgbtn name="bar_prev" skin="skin_bar_prev" pos="[,|-15"/>
+                <imgbtn name="bar_next" skin="skin_bar_next" pos="[,|-15"/>
+                <imgbtn name="bar_rotateleft" skin="skin_bar_rotateleft" pos="[,|-15"/>
+                <imgbtn name="bar_rotateright" skin="skin_bar_rotateright" pos="[,|-15"/>
+                <imgbtn name="bar_delete" skin="skin_bar_delete" pos="[,|-15"/>
+                <imgbtn name="bar_more" skin="skin_bar_more" pos="[,|-15"/>
+              </window>
+            </window>
+				</page>
+
+	</root>
+</SOUI>

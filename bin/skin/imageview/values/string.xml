@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <string>
+    <title value="快眼看图王"/>
+    <ver value="1.0"/>
+    <zoom_max value="已放到最大"/>
+    <zoom_min value="已放到最小"/>
+    <title_format value="%s（%d×%d像素）- 快眼看图王 - 第%d/%d张 %d%%"/>
+  </string>

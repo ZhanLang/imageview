@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="skin">
+      <UniqueIdentifier>{582ed769-22d2-4468-927b-0173ed5fc7ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="skin\tran">
+      <UniqueIdentifier>{59555c36-0ab6-4e5d-ae13-bef73f945a0e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="..\..\bin\skin\imageview\xml\dlg_main.xml">
+      <Filter>skin\tran</Filter>
+    </None>
+    <None Include="..\..\bin\skin\imageview\xml\image_canvas_host.xml">
+      <Filter>skin\tran</Filter>
+    </None>
+    <None Include="..\..\bin\skin\imageview\xml\menu_main.xml">
+      <Filter>skin\tran</Filter>
+    </None>
+    <None Include="..\..\bin\skin\imageview\values\skin.xml">
+      <Filter>skin\tran</Filter>
+    </None>
+    <None Include="..\..\bin\skin\imageview\values\string.xml">
+      <Filter>skin\tran</Filter>
+    </None>
+    <None Include="..\..\bin\skin\imageview\xml\menu_skin.xml">
+      <Filter>skin\tran</Filter>
+    </None>
+    <None Include="..\..\bin\skin\imageview\xml\dlg_setting.xml">
+      <Filter>skin\tran</Filter>
+    </None>
+    <None Include="..\..\bin\skin\imageview\xml\menu_image.xml">
+      <Filter>skin\tran</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SRotateWindow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SShowGifWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\soui2\controls.extend\gif\SSkinGif.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\soui2\controls.extend\gif\SGifPlayer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageViewUI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageCanvas.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageCanvasWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\soui2\controls.extend\SFreeMoveWindow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiframePanel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ZoomRatioWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SouiRealWndHandler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageCanvaHost.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DropTargetBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DropTargetImage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SettingDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SShowGifWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\soui2\controls.extend\gif\SSkinGif.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\soui2\controls.extend\gif\SGifPlayer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageViewUI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageCanvas.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageCanvasWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\soui2\controls.extend\SFreeMoveWindow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiframePanel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ZoomRatioWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SouiRealWndHandler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageCanvaHost.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DropTargetBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DropTargetImage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PrintImageCode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ImageViewUI.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\bin\skin\imageview\uires.idx">
+      <Filter>skin\tran</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

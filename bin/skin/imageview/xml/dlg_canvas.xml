@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<SOUI  sendWheel2Hover="1" resizable="1" margin="2,0,2,2">
+	<root cache="1">
+		<imgbtn name="btn_open" skin="skin_btn_open"  pos="|-86,|-25" show="1"/>
+	</root>
+</SOUI>

@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1DFC9F07-D4E4-4E14-BCF9-72E9838524CB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>JBktUI</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\bin\common file\imageview</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\bin\common file\imageview</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;JBKTUI_EXPORTS;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SOUIPATH)\config;$(SOUIPATH)\components;$(SOUIPATH)\SOUI\include;$(SOUIPATH)\utilities\include;$(code_dir)\msdk\include;..\..\include;$(code_dir)\wtl_include;..\FreeImage\Source\;..\cximage701_full\CxImage\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SOUIPATH)\bin;$(code_dir)\msdk\lib;..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>utilitiesd.lib;souid.lib;stdlog.lib;syslay.lib;jsoncpp_d.lib;FreeImage.lib;../cximage701_full/cximage/CxImageDLL/Unicode_Debug/cximagecrtdu.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>$(code_dir)\msdk\include\mscom\msdllexports.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;JBKTUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SOUIPATH)\config;$(SOUIPATH)\components;$(SOUIPATH)\SOUI\include;$(SOUIPATH)\utilities\include;$(code_dir)\msdk\include;..\..\include;$(code_dir)\wtl_include;..\FreeImage\Source\;..\cximage701_full\CxImage\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SOUIPATH)\bin;$(code_dir)\msdk\lib;..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>$(code_dir)\msdk\include\mscom\msdllexports.def</ModuleDefinitionFile>
+      <AdditionalDependencies>utilities.lib;soui.lib;stdlog.lib;syslay.lib;jsoncpp_r.lib;FreeImage.lib;../cximage701_full/cximage/CxImageDLL/Unicode_Release/cximagecrtu.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\bin\skin\imageview\uires.idx">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(SOUIPATH)\tools\uiresbuilder.exe" -i "%(FullPath)" -p uires -r .\res\soui_res.rc2 -h .\res\resource.h idtable</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(SOUIPATH)\tools\uiresbuilder.exe" -i "%(FullPath)" -p uires -r .\res\soui_res.rc2 -h .\res\resource.h idtable</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building SoUI Resource</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\res\soui_res.rc2;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building SoUI Resource</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\res\soui_res.rc2;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="..\..\bin\skin\imageview\values\skin.xml" />
+    <None Include="..\..\bin\skin\imageview\values\string.xml" />
+    <None Include="..\..\bin\skin\imageview\xml\dlg_main.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\bin\skin\imageview\xml\dlg_setting.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\bin\skin\imageview\xml\image_canvas_host.xml" />
+    <None Include="..\..\bin\skin\imageview\xml\menu_image.xml" />
+    <None Include="..\..\bin\skin\imageview\xml\menu_main.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\bin\skin\imageview\xml\menu_skin.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\soui2\controls.extend\gif\SGifPlayer.h" />
+    <ClInclude Include="..\..\..\soui2\controls.extend\gif\SSkinGif.h" />
+    <ClInclude Include="..\..\..\soui2\controls.extend\SFreeMoveWindow.h" />
+    <ClInclude Include="DropTargetBase.h" />
+    <ClInclude Include="DropTargetImage.h" />
+    <ClInclude Include="ImageCanvaHost.h" />
+    <ClInclude Include="ImageCanvas.h" />
+    <ClInclude Include="ImageCanvasWnd.h" />
+    <ClInclude Include="ImageView.h" />
+    <ClInclude Include="ImageViewUI.h" />
+    <ClInclude Include="MainDlg.h" />
+    <ClInclude Include="MultiframePanel.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SettingDlg.h" />
+    <ClInclude Include="SouiRealWndHandler.h" />
+    <ClInclude Include="SRotateWindow.h" />
+    <ClInclude Include="SShowGifWnd.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ZoomRatioWnd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\soui2\controls.extend\gif\SGifPlayer.cpp" />
+    <ClCompile Include="..\..\..\soui2\controls.extend\gif\SSkinGif.cpp" />
+    <ClCompile Include="..\..\..\soui2\controls.extend\SFreeMoveWindow.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="DropTargetBase.cpp" />
+    <ClCompile Include="DropTargetImage.cpp" />
+    <ClCompile Include="ImageCanvaHost.cpp" />
+    <ClCompile Include="ImageCanvas.cpp" />
+    <ClCompile Include="ImageCanvasWnd.cpp" />
+    <ClCompile Include="ImageView.cpp" />
+    <ClCompile Include="ImageViewUI.cpp" />
+    <ClCompile Include="MainDlg.cpp" />
+    <ClCompile Include="MultiframePanel.cpp" />
+    <ClCompile Include="PrintImageCode.cpp" />
+    <ClCompile Include="SettingDlg.cpp" />
+    <ClCompile Include="SouiRealWndHandler.cpp" />
+    <ClCompile Include="SShowGifWnd.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ZoomRatioWnd.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ImageViewUI.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
