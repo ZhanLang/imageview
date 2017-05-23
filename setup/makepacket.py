@@ -6,11 +6,11 @@ import subprocess
 from xml.etree.ElementTree import ElementTree,Element
 	
 #当前包的版本号
-version = "1.0.0.3"
+version = "1.0.0.4"
 
 #当前包的推广ID
 oper = "0"
-packetid = "3"
+packetid = "4"
 prouctid = "5"
 
 

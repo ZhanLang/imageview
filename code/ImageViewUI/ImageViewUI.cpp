@@ -35,6 +35,7 @@ VOID CImageViewUI::DoReportActive()
 	msapi::CApp m_App(CMsComBase::GetEnvParamString("productname"));
 	ParamValueMap["apiver"]			=		1;					//µ±Ç°API°æ±¾
 	ParamValueMap["hdd"]			=		m_App.GetDiskSerial();
+	ParamValueMap["uguid"]			=		m_App.GetUserGuid();
 	ParamValueMap["mac"]			=		CGetNetAdapterInfo::GetMac();
 	ParamValueMap["osver"]			=		msapi::GetMicroVersion();
 	ParamValueMap["wow64"]			=		msapi::IsWindowsX64();
@@ -45,6 +46,7 @@ VOID CImageViewUI::DoReportActive()
 	ParamValueMap["itime"]			=		m_App.GetSetting(_T("itime"), msapi::GetCurrentTimeStr(FALSE));
 	ParamValueMap["prodver"]		=		m_App.GetVersion();
 	ParamValueMap["oper"]			=		m_App.GetSetting(_T("oper"), 0);
+	ParamValueMap["random"]			=		GetTickCount();
 	msdk::network::CHttpImplement HttpImpl;
 	HttpImpl.GetRequest("update.kyan.com.cn", 80, "active" , ParamValueMap);
 }

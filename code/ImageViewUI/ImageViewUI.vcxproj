@@ -153,7 +153,6 @@
     <ClCompile Include="ImageViewUI.cpp" />
     <ClCompile Include="MainDlg.cpp" />
     <ClCompile Include="MultiframePanel.cpp" />
-    <ClCompile Include="PrintImageCode.cpp" />
     <ClCompile Include="SettingDlg.cpp" />
     <ClCompile Include="SouiRealWndHandler.cpp" />
     <ClCompile Include="SShowGifWnd.cpp" />

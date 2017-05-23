@@ -89,7 +89,7 @@ void CMultiframePanel::OnSize(UINT nType, SOUI::CSize size)
 
 void CMultiframePanel::OnUpdateFloatPosition(const SOUI::CRect & rcParent)
 {
-	SOUI::CSize sz(GetLayoutParam()->GetSpecifiedSize(Horz),GetLayoutParam()->GetSpecifiedSize(Vert));
+	SOUI::CSize sz(GetLayoutParam()->GetSpecifiedSize(Horz).fSize,GetLayoutParam()->GetSpecifiedSize(Vert).fSize);
 	SOUI::CRect rcWnd(SOUI::CPoint(),sz);
 
 
