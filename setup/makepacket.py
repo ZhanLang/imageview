@@ -115,6 +115,8 @@ need_copy_files =[
 	"ImageView.mscom",
 	"ImageView.xml",
 	
+	"imhelp.exe",
+	
 	#lic
 	"directui license.txt",
 	"duilib license.txt",

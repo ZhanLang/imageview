@@ -59,3 +59,5 @@ using namespace mscom;
 #include <shlobj.h>
 
 #define AppName _T("ImageView")
+
+#include <ImageViewDef.h>

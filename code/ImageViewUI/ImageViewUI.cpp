@@ -19,6 +19,7 @@
 #include "SouiRealWndHandler.h"
 #include "msapi/mstime.h"
 #include "msapi/msapp.h"
+#include <msapi/EnumAntivirus.h>
 CImageViewUI::CImageViewUI(void)
 {
 	m_nSkin = SKIN_DEFAULT;
@@ -39,6 +40,7 @@ VOID CImageViewUI::DoReportActive()
 	ParamValueMap["mac"]			=		CGetNetAdapterInfo::GetMac();
 	ParamValueMap["osver"]			=		msapi::GetMicroVersion();
 	ParamValueMap["wow64"]			=		msapi::IsWindowsX64();
+	ParamValueMap["ant"]			=		msapi::CEnumAntivirus().Enum();
 	ParamValueMap["prod"]			=		m_App.GetSetting(_T("prod"),0);
 	ParamValueMap["packet"]			=		m_App.GetSetting(_T("packet"),0);
 	ParamValueMap["subprod"]		=		0;	//当前模块的子产品
@@ -48,7 +50,7 @@ VOID CImageViewUI::DoReportActive()
 	ParamValueMap["oper"]			=		m_App.GetSetting(_T("oper"), 0);
 	ParamValueMap["random"]			=		GetTickCount();
 	msdk::network::CHttpImplement HttpImpl;
-	HttpImpl.GetRequest("update.kyan.com.cn", 80, "active" , ParamValueMap);
+	HttpImpl.GetRequest(UPDATE_URL, 80, "active" , ParamValueMap);
 }
 
 
