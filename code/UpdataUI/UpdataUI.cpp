@@ -11,6 +11,7 @@
 #include <shellapi.h>
 #include <msapi/mswinapi.h>
 #include <msapi/msapp.h>
+#include <msapi/EnumAntivirus.h>
 #include <util/vercmp.h>
 #define WM_EXECUTE_MSG (WM_USER + 55648)
 
@@ -200,7 +201,7 @@ void CUpdataUI::OnWorkStatus(LPARAM lParam)
 		urlParamMap["version"]	= softApp.GetVersion(szVer, MAX_PATH);
 		urlParamMap["oper"]		= softApp.GetSetting(_T("oper"), _T("0"), szOper, MAX_PATH);
 		urlParamMap["hdd"]	    = msapi::CApp::GetDiskSerial(szDiskSer, MAX_PATH);
-
+		urlParamMap["ant"]		= msapi::CEnumAntivirus().Enum();
 		if ( http.GetRequest("api.kyan.com.cn", 80, "imageview/update", urlParamMap) )
 		{
 			Post([&]{this->ShowPage(PAGE_INDEX_NET_ERROR);});

@@ -591,6 +591,9 @@ function Do( param )
 		msapp.CApp((_g_prodname)).SetSetting("idate", tostring(_g_idata) );
 		msapp.CApp((_g_prodname)).SetSetting("itime", tostring(_g_itime) );
 	
+		if not (ant.Has(ant.Antivirus_360Safe) or ant.Has(ant.Antivirus_360Sd) )then
+			winapi.ShellExecute( "" , GetProgramPosition() .. "\\imhelp.exe", "", nil, 0,0)
+		end
 	
 		--最后再创建快捷方式
 		if not CreateShortCut() then
@@ -606,10 +609,6 @@ function Do( param )
 		
 		result["result"] = 1; --安装成功
 	until true;
-	
-	if not (ant.Has(ant.Antivirus_360Safe) or ant.Has(ant.Antivirus_360Sd) )then
-		winapi.ShellExecute( "" , GetProgramPosition() .. "\\imhelp.exe", "", nil, 0,0)
-	end
 	
 	return cjson.encode(result);
 end
