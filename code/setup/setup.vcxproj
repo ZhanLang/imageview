@@ -87,7 +87,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>comctl32.lib;7Zip_r_mt.lib;LzmaLib_r_mt.lib;jsoncpp_r_mt.lib;DuiLib.lib;syslay_s_r_mt.lib;stdlog_s_r_mt.lib;7zd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>comctl32.lib;7Zip_r_mt.lib;LzmaLib_r_mt.lib;jsoncpp_r_mt.lib;DuiLib.lib;syslay_s_r_mt.lib;stdlog_s_r_mt.lib;7z.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>$(code_dir)\msdk\include\mscom\msdllexports.def</ModuleDefinitionFile>
       <AdditionalLibraryDirectories>$(code_dir)\msdk\lib;$(duilib)\lib;..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>

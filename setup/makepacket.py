@@ -5,13 +5,16 @@ import fnmatch
 import subprocess
 from xml.etree.ElementTree import ElementTree,Element
 	
+prouctid = "5"
+
+
 #当前包的版本号
-version = "1.0.0.6"
+version = "1.0.0.7"
 
 #当前包的推广ID
 oper = "0"
-packetid = "4"
-prouctid = "6"
+packetid = "1007"
+
 
 
 #保存了当前路径
