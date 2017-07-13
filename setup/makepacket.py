@@ -9,11 +9,11 @@ prouctid = "5"
 
 
 #当前包的版本号
-version = "1.0.0.7"
+version = "1.0.0.8"
 
 #当前包的推广ID
 oper = "0"
-packetid = "1007"
+packetid = "1008"
 
 
 
