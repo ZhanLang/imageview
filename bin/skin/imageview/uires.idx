@@ -4,14 +4,15 @@
 		<file name="XML_INIT" path="uidef\init.xml" />
 	</UIDEF>
 	<LAYOUT>
-    <file name="menu_main" path="xml\menu_main.xml"/>
-    <file name="menu_skin" path="xml\menu_skin.xml"/>
-    <file name="menu_image" path="xml\menu_image.xml"/>
+		<file name="menu_main" path="xml\menu_main.xml"/>
+		<file name="menu_skin" path="xml\menu_skin.xml"/>
+		<file name="menu_image" path="xml\menu_image.xml"/>
 		<file name="XML_MAINWND" path="xml\dlg_main.xml"/>
 		<file name="XML_DLG_LOAD_SRV_ERROR" path="xml\dlg_load_srv_error.xml" />
-    <file name="XML_DLG_SETTING" path="xml\dlg_setting.xml" />
+		<file name="XML_DLG_SETTING" path="xml\dlg_setting.xml" />
 		<file name="XML_IMAGE_CANVAS" path="xml\dlg_canvas.xml" />
-    <file name="XML_IMAGE_CANVAS_HOST" path="xml\image_canvas_host.xml" />
+		<file name="XML_IMAGE_CANVAS_HOST" path="xml\image_canvas_host.xml" />
+		<file name="XML_DLG_UPDATE" path="xml\dlg_update.xml" />
 	</LAYOUT>
 	<values>
 		<file name="string" path="values\string.xml" />
@@ -20,38 +21,38 @@
 	</values>
 	<IMG>
 		<file name="img_frameShadowBg" path="image\frameShadowBg.png"/>
-    <file name="img_bk" path="image\bk.png"/>
-    <file name="img_white_bk" path="image\white_bk.png"/>
+		<file name="img_bk" path="image\bk.png"/>
+		<file name="img_white_bk" path="image\white_bk.png"/>
 		<file name="img_bk_20" path="image\bk_20.png"/>
 		<file name="img_bk_40" path="image\bk_40.png"/>
 		<file name="img_bk_60" path="image\bk_60.png"/>
 		<file name="img_bk_80" path="image\bk_80.png"/>
 		<file name="img_header" path="image\head.png"/>
-		
+
 		<file name="img_sys_close" path="image\defaultSkin_systemBtn_close.png"/>
 		<file name="img_sys_max" path="image\defaultSkin_systemBtn_max.png"/>
 		<file name="img_sys_restore" path="image\defaultSkin_systemBtn_restore.png"/>
 		<file name="img_sys_min" path="image\defaultSkin_systemBtn_min.png"/>
 		<file name="img_sys_screen" path="image\defaultSkin_systemBtn_fullScreen.png"/>
 		<file name="img_sys_menu" path="image\defaultSkin_systemBtn_mainMenu.png"/>
-    <file name="img_sys_menu_red" path="image\defaultSkin_systemBtn_mainMenu_red.png"/>
+		<file name="img_sys_menu_red" path="image\defaultSkin_systemBtn_mainMenu_red.png"/>
 		<file name="img_sys_skin" path="image\defaultSkin_systemBtn_skin.png"/>
-    
-    <file name="img_sys_checkbox" path="image\sys_checkbox.png"/>
 
-    <file name="img_batch_bg" path="image\batch_bg.png"/>
-    <file name="img_batch_bg_ex" path="image\batch_bg_ex.png"/>
-    
-    
+		<file name="img_sys_checkbox" path="image\sys_checkbox.png"/>
+
+		<file name="img_batch_bg" path="image\batch_bg.png"/>
+		<file name="img_batch_bg_ex" path="image\batch_bg_ex.png"/>
+
+
 		<file name="img_btn_open_trans" path="image\open_trans.png"/>
-    <file name="img_btn_open" path="image\open.png"/>
+		<file name="img_btn_open" path="image\open.png"/>
 		<file name="img_btn_prev" path="image\prev_btn_blue.png"/>
 		<file name="img_btn_next" path="image\next_btn_blue.png"/>
-		
+
 		<file name="img_bar_bk" path="image\toolsBarBg.png"/>
 
-    <file name="img_zoomratio" path="image\ZoomRatio.png"/>
-    
+		<file name="img_zoomratio" path="image\ZoomRatio.png"/>
+
 		<file name="img_btn_orignalsize_black" path="image\OrignalSize_black.png"/>
 		<file name="img_btn_fitsize_black" path="image\FitSize_black.png"/>
 		<file name="img_btn_zoomin_black" path="image\ZoomIn_black.png"/>
@@ -64,40 +65,50 @@
 		<file name="img_bar_more_black" path="image\More_black.png"/>
 
 
-    <file name="img_btn_orignalsize" path="image\OrignalSize.png"/>
-    <file name="img_btn_fitsize" path="image\FitSize.png"/>
-    <file name="img_btn_zoomin" path="image\ZoomIn.png"/>
-    <file name="img_btn_zoomout" path="image\ZoomOut.png"/>
-    <file name="img_bar_next" path="image\Next.png"/>
-    <file name="img_bar_prev" path="image\Prev.png"/>
-    <file name="img_bar_rotateleft" path="image\RotateLeft.png"/>
-    <file name="img_bar_rotateright" path="image\RotateRight.png"/>
-    <file name="img_bar_delete" path="image\Delete.png"/>
-    <file name="img_bar_more" path="image\More.png"/>
-    
+		<file name="img_btn_orignalsize" path="image\OrignalSize.png"/>
+		<file name="img_btn_fitsize" path="image\FitSize.png"/>
+		<file name="img_btn_zoomin" path="image\ZoomIn.png"/>
+		<file name="img_btn_zoomout" path="image\ZoomOut.png"/>
+		<file name="img_bar_next" path="image\Next.png"/>
+		<file name="img_bar_prev" path="image\Prev.png"/>
+		<file name="img_bar_rotateleft" path="image\RotateLeft.png"/>
+		<file name="img_bar_rotateright" path="image\RotateRight.png"/>
+		<file name="img_bar_delete" path="image\Delete.png"/>
+		<file name="img_bar_more" path="image\More.png"/>
+
 		<file name="img_public_picerrors" path="image\public_picerrors.png"/>
 
-    <file name="png_small_icons"  path="image\small_icons.png"/>
+		<file name="png_small_icons"  path="image\small_icons.png"/>
 
-    <file name="img_multiframe_bg"  path="image\public_multiFrame_bg.png"/>
-    <file name="img_multiframe_next"  path="image\public_multiFrame_next.png"/>
-    <file name="img_multiframe_pause"  path="image\public_multiFrame_pause.png"/>
-    <file name="img_multiframe_play"  path="image\public_multiFrame_play.png"/>
-    <file name="img_multiframe_prev"  path="image\public_multiFrame_prev.png"/>
-    <file name="img_multiframe_save"  path="image\public_multiFrame_save.png"/>
-    <file name="img_multiframe_saveall"  path="image\public_multiFrame_saveAll.png"/>
-    <!--menu-->
-    <file name="img_menu_item_bk"  path="image\menu_item_bk.png"/>
-    <file name="img_menu_sep" path="image\menu_separator.png"/>
-    <file name="img_menu_check" path="image\Menu_tick.png"/>
-    <file name="img_menu_icos" path="image\menu_icos.png"/>
+		<file name="img_multiframe_bg"  path="image\public_multiFrame_bg.png"/>
+		<file name="img_multiframe_next"  path="image\public_multiFrame_next.png"/>
+		<file name="img_multiframe_pause"  path="image\public_multiFrame_pause.png"/>
+		<file name="img_multiframe_play"  path="image\public_multiFrame_play.png"/>
+		<file name="img_multiframe_prev"  path="image\public_multiFrame_prev.png"/>
+		<file name="img_multiframe_save"  path="image\public_multiFrame_save.png"/>
+		<file name="img_multiframe_saveall"  path="image\public_multiFrame_saveAll.png"/>
+		<!--menu-->
+		<file name="img_menu_item_bk"  path="image\menu_item_bk.png"/>
+		<file name="img_menu_sep" path="image\menu_separator.png"/>
+		<file name="img_menu_check" path="image\Menu_tick.png"/>
+		<file name="img_menu_icos" path="image\menu_icos.png"/>
 
-    <!--setting-->
-    <file name="img_settingbg_inside"  path="image\SettingBG_Inside.png"/>
-    <file name="img_setting_close"  path="image\sys_close.png"/>
-    <file name="img_thumbnails_bg"  path="image\Thumbnails_BG.png"/>
-    <file name="img_tabctrl_tab"  path="image\tabctrl_tab.png"/>
-    <file name="img_erweima" path="image\erweima.jpg"/>
+		<!--setting-->
+		<file name="img_settingbg_inside"  path="image\SettingBG_Inside.png"/>
+		<file name="img_setting_close"  path="image\sys_close.png"/>
+		<file name="img_thumbnails_bg"  path="image\Thumbnails_BG.png"/>
+		<file name="img_tabctrl_tab"  path="image\tabctrl_tab.png"/>
+		<file name="img_erweima" path="image\erweima.jpg"/>
+		
+		<file name="image_popwndframe_png" path="popwndframe.png" />
+		<file name="update_image_bk_png" path="image\update\bk.png" />
+		<file name="update_image_sys_close_min_png" path="image\update\sys_close_min.png" />
+		<file name="update_image_white_png" path="image\update\white.png" />
+		<file name="update_image_Progress_bg_png" path="image\update\Progress_bg.png" />
+		<file name="update_image_Progress_top_png" path="image\update\Progress_top.png" />
+		<file name="update_image_btnOkBlue_png" path="image\update\btnOkBlue.png" />
+		<file name="update_image_btnCancelRed_png" path="image\update\btnCancelRed.png" />
+		<file name="update_image_sys_checkbox_png" path="image\update\sys_checkbox.png" />
 	</IMG>
 	<ICON>
 		<file name="ICON_LOGO" path="image\ImageView.ico" />

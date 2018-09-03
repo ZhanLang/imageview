@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<SOUI name="window" title="@string/title" width="420" height="250" margin="0,5,5,5" wndType="8" toolWindow="1" translucent="255">
+	<root skin="image_popwndframe_png" cache="1" inset="10,10,10,10">
+		<window pos="0,0,-0,-0">
+			<caption name="caption" pos="0,0,-0,40" show="1" cache="1" skin="update_image_bk_png">
+				<text pos="[+10,10" font="face:微软雅黑,size:18" colortext="#ffffff">发现新版本</text>
+				<window pos="36,0,-255,-0" msgTransparent="1" />
+				<imgbtn id="2" skin="update_image_sys_close_min_png" pos="-40,0" tip="关闭" />
+			</caption>
+			<tabctrl pos="0,[,-0,-0" tabHeight="0" curSel="0" name="tabUpdate" skin="update_image_white_png">
+				<page pos="0,0,-0,-0" inset="0,0,0,0">
+				
+					<text name="updateContent" pos="10,12,-10,90" font="face:微软雅黑,size:15" Colortext="#000000" multiLines="1" align="center" readOnly="1" transparent="1" />
+					<check name="skipCheck" pos="10,120" skin="update_image_sys_checkbox_png" font="face:微软雅黑,size:12" Colortext="#666666" focusSkin="" drawFocusRect="0">此版本不再提示</check>
+					<hr colorLine="#e5e5e5" size="1" mode="horizontal" pos="0,-51,-0,-50" />
+					<imgbtn name="btnUpdate" skin="update_image_btnOkBlue_png" pos="50,[+3" />
+					<imgbtn name="btnCancel" skin="update_image_btnCancelRed_png" pos="-165,{" />
+				</page>
+				<page pos="0,0,-0,-0" inset="0,0,0,0">
+					<text pos="150,50" font="face:微软雅黑,size:15" Colortext="#6b6b6b" multiLines="1" align="center" readOnly="1" transparent="1">正在升级...</text>
+					<progress name="prog" pos="20,80,-20,86" font="adding:-8" value="0" min="0" max="100" showPercent="0" bkgndSkin="update_image_Progress_bg_png" posSkin="update_image_Progress_top_png" />
+					<hr colorLine="#e5e5e5" size="1" mode="horizontal" pos="0,-51,-0,-50" />
+					<!--imgbtn name="btnCancel" skin="image_btnCancelRed_png" pos="145,[+3" /-->
+				</page>
+				<page pos="0,0,-0,-0" inset="0,0,0,0">
+					<text pos="150,60" font="face:微软雅黑,size:22" Colortext="#6b6b6b" multiLines="1" align="center" readOnly="1" transparent="1">升级成功</text>
+					<hr colorLine="#e5e5e5" size="1" mode="horizontal" pos="0,-51,-0,-50" />
+					<imgbtn name="btnOk" skin="update_image_btnOkBlue_png" pos="145,[+3" />
+				</page>
+				<page pos="0,0,-0,-0" inset="0,0,0,0">
+					<text pos="150,30" font="face:微软雅黑,size:22" Colortext="#6b6b6b" multiLines="1" align="center" readOnly="1" transparent="1">升级失败</text>
+					<link name="updateWebUrl" href="" cursor="hand" pos="126,70" font="face:微软雅黑,size:14" Colortext="#666666">点击前往官网手动更新</link>
+					<hr colorLine="#e5e5e5" size="1" mode="horizontal" pos="0,-51,-0,-50" />
+					<imgbtn id="1" skin="update_image_btnOkBlue_png" pos="145,[+3" />
+				</page>
+			</tabctrl>
+		</window>
+	</root>
+</SOUI>

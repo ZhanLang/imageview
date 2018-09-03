@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<mscomcfg>
-
- <!--begin mscom-->
-	<moudle guid='{2BA8FCC3-E101-4D80-8A3A-EFE62775A407}'  X86='.\common file\imageview\ImageviewUI.dll'>
-		<class clsid='{2FC8AF14-E405-4A74-B176-0003955B11B0}'  progid='CLSID_JBktUI'  name='CLSID_ImageviewUI'/>
-	</moudle>	
-</mscomcfg>

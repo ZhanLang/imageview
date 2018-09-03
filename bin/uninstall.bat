@@ -1,1 +1,0 @@
-uninstall.exe /d

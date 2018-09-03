@@ -7,5 +7,5 @@
   <menuItem id="2002" icon="5">打开文件夹</menuItem>
   <sep/>
   <menuItem id="2004" icon="4">设置</menuItem>
-  <menuItem id="2005" icon="-1">检查更新</menuItem>
+  <!--menuItem id="2005" icon="-1">检查更新</menuItem-->
 </menuRoot>

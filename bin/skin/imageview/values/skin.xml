@@ -2,14 +2,14 @@
 <skin>
 	<imgframe name="skin_frameShadowBg" src="img:img_frameShadowBg" margin="20,21,21,21"/>
 
-  <imgframe name="skin_bk" src="img:img_bk" margin="3,3,3,3"/>
-  <imgframe name="skin_white_bk" src="img:img_white_bk"/>
+	<imgframe name="skin_bk" src="img:img_bk" margin="3,3,3,3"/>
+	<imgframe name="skin_white_bk" src="img:img_white_bk"/>
 	<imgframe name="skin_bk_20" src="img:img_bk_20" margin="3,3,3,3"/>
-	
+
 	<imgframe name="skin_bk_40" src="img:img_bk_40" margin="3,3,3,3"/>
 	<imgframe name="skin_bk_60" src="img:img_bk_60" margin="3,3,3,3"/>
 	<imgframe name="skin_bk_80" src="img:img_bk_80" margin="3,3,3,3"/>
-	
+
 	<imgframe name="skin_header_img" src="img:img_header" margin="3,3,3,3"/>
 	<imglist name="skin_sys_close" src="img:img_sys_close" states="4"/>
 	<imglist name="skin_sys_max" src="img:img_sys_max" states="4"/>
@@ -17,32 +17,32 @@
 	<imglist name="skin_sys_min" src="img:img_sys_min" states="4"/>
 	<imglist name="skin_sys_screen" src="img:img_sys_screen" states="4"/>
 	<imglist name="skin_sys_menu" src="img:img_sys_menu" states="4"/>
-  <imglist name="skin_sys_menu_red" src="img:img_sys_menu_red" states="4"/>
+	<imglist name="skin_sys_menu_red" src="img:img_sys_menu_red" states="4"/>
 	<imglist name="skin_sys_skin" src="img:img_sys_skin" states="4"/>
 
-  <imglist name="skin_sys_checkbox" src="img:img_sys_checkbox" states="8"/>
-  <imglist name="skin_batch_bg" src="img:img_batch_bg" states="4"/>
-  <imglist name="skin_batch_bg_ex" src="img:img_batch_bg_ex" states="4"/>
-  
-  <imglist name="skin_btn_open_trans" src="img:img_btn_open_trans" states="3"/>
+	<imglist name="skin_sys_checkbox" src="img:img_sys_checkbox" states="8"/>
+	<imglist name="skin_batch_bg" src="img:img_batch_bg" states="4"/>
+	<imglist name="skin_batch_bg_ex" src="img:img_batch_bg_ex" states="4"/>
+
+	<imglist name="skin_btn_open_trans" src="img:img_btn_open_trans" states="3"/>
 	<imglist name="skin_btn_open" src="img:img_btn_open" states="3"/>
 	<imglist name="skin_btn_prev" src="img:img_btn_prev" states="3"/>
 	<imglist name="skin_btn_next" src="img:img_btn_next" states="3"/>
-	
-	<imgframe name="skin_bk_bar" src="img:img_bar_bk" margin="1,1,1,1"/>
-  <imgframe name="skin_zoomratio" src="img:img_zoomratio" margin="0,0,0,0"/>
 
-  <imglist name="skin_btn_orignalsize_black" src="img:img_btn_orignalsize_black" states="4"/>
-  <imglist name="skin_btn_fitsize_black" src="img:img_btn_fitsize_black" states="4"/>
-  <imglist name="skin_btn_zoomin_black" src="img:img_btn_zoomin_black" states="4"/>
-  <imglist name="skin_btn_zoomout_black" src="img:img_btn_zoomout_black" states="4"/>
-  <imglist name="skin_bar_next_black" src="img:img_bar_next_black" states="4"/>
-  <imglist name="skin_bar_prev_black" src="img:img_bar_prev_black" states="4"/>
-  <imglist name="skin_bar_rotateleft_black" src="img:img_bar_rotateleft_black" states="4"/>
-  <imglist name="skin_bar_rotateright_black" src="img:img_bar_rotateright_black" states="4"/>
-  <imglist name="skin_bar_delete_black" src="img:img_bar_delete_black" states="4"/>
-  <imglist name="skin_bar_more_black" src="img:img_bar_more_black" states="4"/>
-  
+	<imgframe name="skin_bk_bar" src="img:img_bar_bk" margin="1,1,1,1"/>
+	<imgframe name="skin_zoomratio" src="img:img_zoomratio" margin="0,0,0,0"/>
+
+	<imglist name="skin_btn_orignalsize_black" src="img:img_btn_orignalsize_black" states="4"/>
+	<imglist name="skin_btn_fitsize_black" src="img:img_btn_fitsize_black" states="4"/>
+	<imglist name="skin_btn_zoomin_black" src="img:img_btn_zoomin_black" states="4"/>
+	<imglist name="skin_btn_zoomout_black" src="img:img_btn_zoomout_black" states="4"/>
+	<imglist name="skin_bar_next_black" src="img:img_bar_next_black" states="4"/>
+	<imglist name="skin_bar_prev_black" src="img:img_bar_prev_black" states="4"/>
+	<imglist name="skin_bar_rotateleft_black" src="img:img_bar_rotateleft_black" states="4"/>
+	<imglist name="skin_bar_rotateright_black" src="img:img_bar_rotateright_black" states="4"/>
+	<imglist name="skin_bar_delete_black" src="img:img_bar_delete_black" states="4"/>
+	<imglist name="skin_bar_more_black" src="img:img_bar_more_black" states="4"/>
+
 	<imglist name="skin_btn_orignalsize" src="img:img_btn_orignalsize" states="4"/>
 	<imglist name="skin_btn_fitsize" src="img:img_btn_fitsize" states="4"/>
 	<imglist name="skin_btn_zoomin" src="img:img_btn_zoomin" states="4"/>
@@ -53,32 +53,43 @@
 	<imglist name="skin_bar_rotateright" src="img:img_bar_rotateright" states="4"/>
 	<imglist name="skin_bar_delete" src="img:img_bar_delete" states="4"/>
 	<imglist name="skin_bar_more" src="img:img_bar_more" states="4"/>
-	
-  
+
+
 	<imgframe name="skin_public_picerrors" src="img:img_public_picerrors" margin="0,0,0,0"/>
 
-  <imgframe name="skin_multiframe_bg" src="img:img_multiframe_bg" margin="0,0,0,0"/>
-  <imglist name="skin_multiframe_next" src="img:img_multiframe_next" states="4"/>
-  <imglist name="skin_multiframe_pause" src="img:img_multiframe_pause" states="4"/>
-  <imglist name="skin_multiframe_play" src="img:img_multiframe_play" states="4"/>
-  <imglist name="skin_multiframe_prev" src="img:img_multiframe_prev" states="4"/>
-  <imglist name="skin_multiframe_save" src="img:img_multiframe_save" states="4"/>
-  <imglist name="skin_multiframe_saveall" src="img:img_multiframe_saveall" states="4"/>
-  
-  
-  <imglist name="skin_small_icons" src="img:png_small_icons" states="12"/>
-  
-  <!--menu-->
-  <imgframe name="skin_menu_item_bk" src="img:img_menu_item_bk" states="2"/>
-  <imgframe name="skin_menu_sep" src="img:img_menu_sep"/>
-  <imgframe name="skin_menu_check" src="img:img_menu_check"/>
-  <imglist name="skin_menu_icos" src="img:img_menu_icos" states="20"/>
+	<imgframe name="skin_multiframe_bg" src="img:img_multiframe_bg" margin="0,0,0,0"/>
+	<imglist name="skin_multiframe_next" src="img:img_multiframe_next" states="4"/>
+	<imglist name="skin_multiframe_pause" src="img:img_multiframe_pause" states="4"/>
+	<imglist name="skin_multiframe_play" src="img:img_multiframe_play" states="4"/>
+	<imglist name="skin_multiframe_prev" src="img:img_multiframe_prev" states="4"/>
+	<imglist name="skin_multiframe_save" src="img:img_multiframe_save" states="4"/>
+	<imglist name="skin_multiframe_saveall" src="img:img_multiframe_saveall" states="4"/>
 
-  <!--setting-->
-  <imgframe name="skin_settingbg_inside" src="img:img_settingbg_inside" margin="2,2,2,2"/>
-  <imglist name="skin_setting_close" src="img:img_setting_close" states="4"/>
-  <imgframe name="skin_thumbnails_bg" src="img:img_thumbnails_bg" margin="2,2,2,2"/>
-  <imglist name="skin_tabctrl_tab" src="img:img_tabctrl_tab" states="3"/>
-  <imgframe name="skin_erweima" src="img:img_erweima"/>
-  <button name="skin_check_update" colorBorder="" colorUp="#467cd4" colorDown="#467cd4" colorUpHover="#5889d9" colorDownHover="#5889d9" colorUpPush="#3b68b5" colorDownPush="#3b68b5"></button>
+
+	<imglist name="skin_small_icons" src="img:png_small_icons" states="12"/>
+
+	<!--menu-->
+	<imgframe name="skin_menu_item_bk" src="img:img_menu_item_bk" states="2"/>
+	<imgframe name="skin_menu_sep" src="img:img_menu_sep"/>
+	<imgframe name="skin_menu_check" src="img:img_menu_check"/>
+	<imglist name="skin_menu_icos" src="img:img_menu_icos" states="20"/>
+
+	<!--setting-->
+	<imgframe name="skin_settingbg_inside" src="img:img_settingbg_inside" margin="2,2,2,2"/>
+	<imglist name="skin_setting_close" src="img:img_setting_close" states="4"/>
+	<imgframe name="skin_thumbnails_bg" src="img:img_thumbnails_bg" margin="2,2,2,2"/>
+	<imglist name="skin_tabctrl_tab" src="img:img_tabctrl_tab" states="3"/>
+	<imgframe name="skin_erweima" src="img:img_erweima"/>
+	
+	<imgframe src="IMG:image_popwndframe_png" name="image_popwndframe_png" margin="20,20,20,20" />
+	<imgframe src="IMG:update_image_bk_png" name="update_image_bk_png" />
+	<imglist src="IMG:update_image_sys_close_min_png" name="update_image_sys_close_min_png" states="4" />
+	<imgframe src="IMG:update_image_white_png" name="update_image_white_png" />
+	<imgframe src="IMG:update_image_Progress_bg_png" name="update_image_Progress_bg_png" />
+	<imgframe src="IMG:update_image_Progress_top_png" name="update_image_Progress_top_png" />
+	<imglist src="IMG:update_image_btnOkBlue_png" name="update_image_btnOkBlue_png" states="3" />
+	<imglist src="IMG:update_image_btnCancelRed_png" name="update_image_btnCancelRed_png" states="3" />
+	<imglist src="IMG:update_image_sys_checkbox_png" name="update_image_sys_checkbox_png" states="8" />
+	
+	<button name="skin_check_update" colorBorder="" colorUp="#467cd4" colorDown="#467cd4" colorUpHover="#5889d9" colorDownHover="#5889d9" colorUpPush="#3b68b5" colorDownPush="#3b68b5"></button>
 </skin>
