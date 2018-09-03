@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlib", "code\cximage701_ful
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{82703A4A-7629-4292-973E-F24B51E5FF1F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SettingTools", "code\SettingTools\SettingTools.vcxproj", "{95D03609-4677-4F91-BE97-BFCB9FC8B591}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -279,6 +281,24 @@ Global
 		{7B53D2C7-1B4A-4A53-A7D3-E25B92470B81}.Unicode Release|Win32.Build.0 = Unicode Release|Win32
 		{7B53D2C7-1B4A-4A53-A7D3-E25B92470B81}.Unicode Release|x64.ActiveCfg = Unicode Release|x64
 		{7B53D2C7-1B4A-4A53-A7D3-E25B92470B81}.Unicode Release|x64.Build.0 = Unicode Release|x64
+		{95D03609-4677-4F91-BE97-BFCB9FC8B591}.Debug|Win32.ActiveCfg = Debug|Win32
+		{95D03609-4677-4F91-BE97-BFCB9FC8B591}.Debug|Win32.Build.0 = Debug|Win32
+		{95D03609-4677-4F91-BE97-BFCB9FC8B591}.Debug|x64.ActiveCfg = Debug|Win32
+		{95D03609-4677-4F91-BE97-BFCB9FC8B591}.DebugMT|Win32.ActiveCfg = Debug|Win32
+		{95D03609-4677-4F91-BE97-BFCB9FC8B591}.DebugMT|Win32.Build.0 = Debug|Win32
+		{95D03609-4677-4F91-BE97-BFCB9FC8B591}.DebugMT|x64.ActiveCfg = Debug|Win32
+		{95D03609-4677-4F91-BE97-BFCB9FC8B591}.Release|Win32.ActiveCfg = Release|Win32
+		{95D03609-4677-4F91-BE97-BFCB9FC8B591}.Release|Win32.Build.0 = Release|Win32
+		{95D03609-4677-4F91-BE97-BFCB9FC8B591}.Release|x64.ActiveCfg = Release|Win32
+		{95D03609-4677-4F91-BE97-BFCB9FC8B591}.ReleaseMT|Win32.ActiveCfg = Release|Win32
+		{95D03609-4677-4F91-BE97-BFCB9FC8B591}.ReleaseMT|Win32.Build.0 = Release|Win32
+		{95D03609-4677-4F91-BE97-BFCB9FC8B591}.ReleaseMT|x64.ActiveCfg = Release|Win32
+		{95D03609-4677-4F91-BE97-BFCB9FC8B591}.Unicode Debug|Win32.ActiveCfg = Debug|Win32
+		{95D03609-4677-4F91-BE97-BFCB9FC8B591}.Unicode Debug|Win32.Build.0 = Debug|Win32
+		{95D03609-4677-4F91-BE97-BFCB9FC8B591}.Unicode Debug|x64.ActiveCfg = Debug|Win32
+		{95D03609-4677-4F91-BE97-BFCB9FC8B591}.Unicode Release|Win32.ActiveCfg = Release|Win32
+		{95D03609-4677-4F91-BE97-BFCB9FC8B591}.Unicode Release|Win32.Build.0 = Release|Win32
+		{95D03609-4677-4F91-BE97-BFCB9FC8B591}.Unicode Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

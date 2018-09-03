@@ -17,13 +17,7 @@
 #define _Def_ApiHost	str_encode_embed<nDefNum,'a','p','i','.','j','i','c','e','r','.','c','n'>()
 
 //imageview/update
-//#define _Def_Update_NetApi str_encode_embed<nDefNum,'i','m','a','g','e','v','i','e','w','/','u','p','d','a','t','e'>()
-
-//winpesetup/pe
-#define _Def_Pe_NetApi  str_encode_embed<nDefNum,'w','i','n','p','e','s','e','t','u','p','/','p','e'>()
-
-//winpesetup/update
-#define _Def_Update_NetApi str_encode_embed<nDefNum,'w','i','n','p','e','s','e','t','u','p','/','u','p','d','a','t','e'>()
+#define _Def_Update_NetApi str_encode_embed<nDefNum,'i','m','a','g','e','v','i','e','w','/','u','p','d','a','t','e'>()
 
 #define _Def_AesKey str_encode_embed<nDefNum,'a','s','d','f','w','e','t','y','h','j','u','y','t','r','f','d'>()
 #define _Def_AesVi  str_encode_embed<nDefNum,'g','f','d','e','r','t','f','g','h','j','k','u','y','r','t','g'>()
