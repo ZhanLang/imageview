@@ -22,7 +22,7 @@ public:
 	STDMETHOD(Uninit)();
 	STDMETHOD(Start)();
 	STDMETHOD(Stop)();
-	
+
 private:
 	VOID DoReportActive();
 private:

@@ -14,15 +14,16 @@
     <ProjectGuid>{1DFC9F07-D4E4-4E14-BCF9-72E9838524CB}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>JBktUI</RootNamespace>
+    <ProjectName>ImageView</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
@@ -39,11 +40,11 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>..\..\bin\common file\imageview</OutDir>
+    <OutDir>..\..\bin\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\..\bin\common file\imageview</OutDir>
+    <OutDir>..\..\bin\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -51,15 +52,16 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;JBKTUI_EXPORTS;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SOUIPATH)\config;$(SOUIPATH)\components;$(SOUIPATH)\SOUI\include;$(SOUIPATH)\utilities\include;$(code_dir)\msdk\include;..\..\include;$(code_dir)\wtl_include;..\FreeImage\Source\;..\cximage701_full\CxImage\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SOUIPATH)\config;$(SOUIPATH)\components;$(SOUIPATH)\SOUI\include;$(SOUIPATH)\utilities\include;$(code_dir)\msdk\include;..\..\include;$(code_dir)\wtl_include;$(code_dir)\msapp\include;..\FreeImage\Source\;..\cximage701_full\CxImage\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SOUIPATH)\bin;$(code_dir)\msdk\lib;..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>utilitiesd.lib;souid.lib;stdlog.lib;syslay.lib;jsoncpp_d.lib;FreeImage.lib;../cximage701_full/cximage/CxImageDLL/Unicode_Debug/cximagecrtdu.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(code_dir)\msdk\include\mscom\msdllexports.def</ModuleDefinitionFile>
+      <AdditionalDependencies>utilitiesd.lib;souid.lib;stdlog.lib;syslay.lib;jsoncpp_d_mt.lib;FreeImage.lib;Wininet.lib;Version.lib;../cximage701_full/cximage/CxImageDLL/Unicode_Debug/cximagecrtdu.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -70,7 +72,8 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;JBKTUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SOUIPATH)\config;$(SOUIPATH)\components;$(SOUIPATH)\SOUI\include;$(SOUIPATH)\utilities\include;$(code_dir)\msdk\include;..\..\include;$(code_dir)\wtl_include;..\FreeImage\Source\;..\cximage701_full\CxImage\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SOUIPATH)\config;$(SOUIPATH)\components;$(SOUIPATH)\SOUI\include;$(SOUIPATH)\utilities\include;$(code_dir)\msdk\include;..\..\include;$(code_dir)\wtl_include;..\FreeImage\Source\;..\cximage701_full\CxImage\;$(code_dir)\msapp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -78,8 +81,9 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalLibraryDirectories>$(SOUIPATH)\bin;$(code_dir)\msdk\lib;..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <ModuleDefinitionFile>$(code_dir)\msdk\include\mscom\msdllexports.def</ModuleDefinitionFile>
-      <AdditionalDependencies>utilities.lib;soui.lib;stdlog.lib;syslay.lib;jsoncpp_r.lib;FreeImage.lib;../cximage701_full/cximage/CxImageDLL/Unicode_Release/cximagecrtu.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <AdditionalDependencies>utilities.lib;soui.lib;stdlog.lib;syslay.lib;jsoncpp_r_mt.lib;FreeImage.lib;Wininet.lib;Version.lib;../cximage701_full/cximage/CxImageDLL/Unicode_Release/cximagecrtu.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -109,11 +113,14 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="ReadMe.txt" />
+    <None Include="res\ImageView.ico" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\soui2\controls.extend\gif\SGifPlayer.h" />
     <ClInclude Include="..\..\..\soui2\controls.extend\gif\SSkinGif.h" />
     <ClInclude Include="..\..\..\soui2\controls.extend\SFreeMoveWindow.h" />
+    <ClInclude Include="dlgUpdate.h" />
+    <ClInclude Include="Downloader.h" />
     <ClInclude Include="DropTargetBase.h" />
     <ClInclude Include="DropTargetImage.h" />
     <ClInclude Include="ImageCanvaHost.h" />
@@ -124,18 +131,23 @@
     <ClInclude Include="MainDlg.h" />
     <ClInclude Include="MultiframePanel.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="SAniImgFrame.h" />
     <ClInclude Include="SettingDlg.h" />
+    <ClInclude Include="SFreeMoveWindow.h" />
+    <ClInclude Include="SGifPlayer.h" />
+    <ClInclude Include="SHostDialogEx.h" />
+    <ClInclude Include="SHostWndEx.h" />
     <ClInclude Include="SouiRealWndHandler.h" />
     <ClInclude Include="SRotateWindow.h" />
     <ClInclude Include="SShowGifWnd.h" />
+    <ClInclude Include="SSkinAPNG.h" />
+    <ClInclude Include="SSkinGif.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="ZoomRatioWnd.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\soui2\controls.extend\gif\SGifPlayer.cpp" />
-    <ClCompile Include="..\..\..\soui2\controls.extend\gif\SSkinGif.cpp" />
-    <ClCompile Include="..\..\..\soui2\controls.extend\SFreeMoveWindow.cpp" />
+    <ClCompile Include="dlgUpdate.cpp" />
     <ClCompile Include="dllmain.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -144,6 +156,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
       </PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Downloader.cpp" />
     <ClCompile Include="DropTargetBase.cpp" />
     <ClCompile Include="DropTargetImage.cpp" />
     <ClCompile Include="ImageCanvaHost.cpp" />
@@ -154,8 +167,13 @@
     <ClCompile Include="MainDlg.cpp" />
     <ClCompile Include="MultiframePanel.cpp" />
     <ClCompile Include="SettingDlg.cpp" />
+    <ClCompile Include="SFreeMoveWindow.cpp" />
+    <ClCompile Include="SGifPlayer.cpp" />
+    <ClCompile Include="SHostDialogEx.cpp" />
+    <ClCompile Include="SHostWndEx.cpp" />
     <ClCompile Include="SouiRealWndHandler.cpp" />
     <ClCompile Include="SShowGifWnd.cpp" />
+    <ClCompile Include="SSkinGif.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>

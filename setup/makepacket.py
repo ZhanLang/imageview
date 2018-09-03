@@ -9,11 +9,11 @@ prouctid = "5"
 
 
 #当前包的版本号
-version = "1.0.1.1"
+version = "1.0.1.5"
 
 #当前包的推广ID
 oper = "0"
-packetid = "1011"
+packetid = "1015"
 
 
 
@@ -118,7 +118,7 @@ need_copy_files =[
 	"ImageView.mscom",
 	"ImageView.xml",
 	
-	"imhelp.exe",
+	#"imhelp.exe",
 	
 	#lic
 	"directui license.txt",

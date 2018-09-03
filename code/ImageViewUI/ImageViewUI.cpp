@@ -23,6 +23,7 @@
 CImageViewUI::CImageViewUI(void)
 {
 	m_nSkin = SKIN_DEFAULT;
+	AddRef();
 }
 
 

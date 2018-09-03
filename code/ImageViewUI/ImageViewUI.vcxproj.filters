@@ -46,6 +46,9 @@
     <None Include="..\..\bin\skin\imageview\xml\menu_image.xml">
       <Filter>skin\tran</Filter>
     </None>
+    <None Include="res\ImageView.ico">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -108,6 +111,33 @@
     <ClInclude Include="SettingDlg.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="SGifPlayer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SFreeMoveWindow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SSkinGif.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SAniImgFrame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SSkinAPNG.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgUpdate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SHostDialogEx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SHostWndEx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Downloader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -122,12 +152,6 @@
     <ClCompile Include="SShowGifWnd.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\soui2\controls.extend\gif\SSkinGif.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\soui2\controls.extend\gif\SGifPlayer.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="ImageViewUI.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -135,9 +159,6 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="ImageCanvasWnd.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\soui2\controls.extend\SFreeMoveWindow.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="ImageView.cpp">
@@ -162,6 +183,27 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="SettingDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SGifPlayer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SFreeMoveWindow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SSkinGif.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgUpdate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SHostDialogEx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SHostWndEx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Downloader.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
