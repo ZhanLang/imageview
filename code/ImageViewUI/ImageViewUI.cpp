@@ -31,28 +31,6 @@ CImageViewUI::~CImageViewUI(void)
 {
 }
 
-VOID CImageViewUI::DoReportActive()
-{
-	msdk::network::CUrlParamValueMap ParamValueMap;
-	msapi::CApp m_App(CMsComBase::GetEnvParamString("productname"));
-	ParamValueMap["apiver"]			=		1;					//当前API版本
-	ParamValueMap["hdd"]			=		m_App.GetDiskSerial();
-	ParamValueMap["uguid"]			=		m_App.GetUserGuid();
-	ParamValueMap["mac"]			=		CGetNetAdapterInfo::GetMac();
-	ParamValueMap["osver"]			=		msapi::GetMicroVersion();
-	ParamValueMap["wow64"]			=		msapi::IsWindowsX64();
-	ParamValueMap["ant"]			=		msapi::CEnumAntivirus().Enum();
-	ParamValueMap["prod"]			=		m_App.GetSetting(_T("prod"),0);
-	ParamValueMap["packet"]			=		m_App.GetSetting(_T("packet"),0);
-	ParamValueMap["subprod"]		=		0;	//当前模块的子产品
-	ParamValueMap["idate"]			=		m_App.GetSetting(_T("idate"), msapi::GetCurrentDateStr(FALSE));
-	ParamValueMap["itime"]			=		m_App.GetSetting(_T("itime"), msapi::GetCurrentTimeStr(FALSE));
-	ParamValueMap["prodver"]		=		m_App.GetVersion();
-	ParamValueMap["oper"]			=		m_App.GetSetting(_T("oper"), 0);
-	ParamValueMap["random"]			=		GetTickCount();
-	msdk::network::CHttpImplement HttpImpl;
-	HttpImpl.GetRequest(UPDATE_URL, 80, "active" , ParamValueMap);
-}
 
 
 HRESULT CImageViewUI::Init(void*)
@@ -144,7 +122,7 @@ HRESULT CImageViewUI::Init(void*)
 
 	}
 
-	CThreadEx().Do([this]{DoReportActive();});
+	
 	return S_OK;
 }
 
