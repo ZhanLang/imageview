@@ -3,8 +3,8 @@
 #include <util/str_encode_embed.h>
 #include <AppDefiner.h>
 
-#define _Def_Version	L"1.0.1.6"
-#define _Def_Packet		1016
+#define _Def_Version	L"1.0.1.7"
+#define _Def_Packet		1017
 
 //update.jicer.cn
 #define _Def_Prod		AppProd_imaveview

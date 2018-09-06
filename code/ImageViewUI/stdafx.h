@@ -8,7 +8,7 @@
 #include "targetver.h"
 
 #define WIN32_LEAN_AND_MEAN             //  从 Windows 头文件中排除极少使用的信息
-
+#define _WTL_NO_CSTRING
 // Windows 头文件:
 #include <windows.h>
 
@@ -42,7 +42,7 @@
 #include <com-cfg.h>
 
 #include <atlconv.h>
-
+#include <atlstr.h>
 
 
 #include "resource.h"

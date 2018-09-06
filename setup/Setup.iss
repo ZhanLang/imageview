@@ -3,8 +3,8 @@
 
 #include 'include\sapi\sapi.iss'
 #define MyAppName "快眼看图王"
-#define MyAppVersion "1.0.1.6"
-#define PacketID  	  1016 ;包ID
+#define MyAppVersion "1.0.1.7"
+#define PacketID  	  1017 ;包ID
 
 #define MyAppPublisher "极客工作室."
 #define MyAppURL "http://www.kantuwang.wang"
@@ -24,6 +24,7 @@
 AppId={{A95B3BFD-ED8E-4C36-A14E-D853E03F17BA}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
+VersionInfoVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
 
 UsePreviousAppDir=yes

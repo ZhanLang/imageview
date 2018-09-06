@@ -63,7 +63,7 @@
 		<file name="img_bar_rotateright_black" path="image\RotateRight_black.png"/>
 		<file name="img_bar_delete_black" path="image\Delete_black.png"/>
 		<file name="img_bar_more_black" path="image\More_black.png"/>
-
+		
 
 		<file name="img_btn_orignalsize" path="image\OrignalSize.png"/>
 		<file name="img_btn_fitsize" path="image\FitSize.png"/>
