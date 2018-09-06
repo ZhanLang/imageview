@@ -10,7 +10,7 @@
 #include "..\controls.extend\gif\SGifPlayer.h"
 #include "SRotateWindow.h"
 #include "SShowGifWnd.h"
-#include "..\controls.extend\SFreeMoveWindow.h"
+#include "SFreeMoveWindow1.h"
 
 #include<ximage.h>
 #include "ImageView.h"

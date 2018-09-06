@@ -1,5 +1,5 @@
 #pragma once
-#include "..\controls.extend\SFreeMoveWindow.h"
+#include "SFreeMoveWindow1.h"
 #include "ImageCanvas.h"
 class CMultiframePanel : public SFreeMoveWindow
 {

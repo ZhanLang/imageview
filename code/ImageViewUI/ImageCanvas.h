@@ -8,7 +8,7 @@
 #include <Gdiplus.h>
 #include <GdiPlusImaging.h>
 #include <map>
-#include "..\controls.extend\SFreeMoveWindow.h"
+#include "SFreeMoveWindow1.h"
 
 
 struct DocType

@@ -84,9 +84,6 @@
     <ClInclude Include="ImageCanvasWnd.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\soui2\controls.extend\SFreeMoveWindow.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="ImageView.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -114,9 +111,6 @@
     <ClInclude Include="SGifPlayer.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="SFreeMoveWindow.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="SSkinGif.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -136,6 +130,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Downloader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SFreeMoveWindow1.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -188,9 +185,6 @@
     <ClCompile Include="SGifPlayer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="SFreeMoveWindow.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="SSkinGif.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -204,6 +198,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Downloader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SFreeMoveWindow1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -118,7 +118,6 @@
   <ItemGroup>
     <ClInclude Include="..\..\..\soui2\controls.extend\gif\SGifPlayer.h" />
     <ClInclude Include="..\..\..\soui2\controls.extend\gif\SSkinGif.h" />
-    <ClInclude Include="..\..\..\soui2\controls.extend\SFreeMoveWindow.h" />
     <ClInclude Include="dlgUpdate.h" />
     <ClInclude Include="Downloader.h" />
     <ClInclude Include="DropTargetBase.h" />
@@ -133,7 +132,7 @@
     <ClInclude Include="resource.h" />
     <ClInclude Include="SAniImgFrame.h" />
     <ClInclude Include="SettingDlg.h" />
-    <ClInclude Include="SFreeMoveWindow.h" />
+    <ClInclude Include="SFreeMoveWindow1.h" />
     <ClInclude Include="SGifPlayer.h" />
     <ClInclude Include="SHostDialogEx.h" />
     <ClInclude Include="SHostWndEx.h" />
@@ -167,7 +166,7 @@
     <ClCompile Include="MainDlg.cpp" />
     <ClCompile Include="MultiframePanel.cpp" />
     <ClCompile Include="SettingDlg.cpp" />
-    <ClCompile Include="SFreeMoveWindow.cpp" />
+    <ClCompile Include="SFreeMoveWindow1.cpp" />
     <ClCompile Include="SGifPlayer.cpp" />
     <ClCompile Include="SHostDialogEx.cpp" />
     <ClCompile Include="SHostWndEx.cpp" />

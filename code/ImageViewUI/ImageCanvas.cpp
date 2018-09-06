@@ -361,7 +361,7 @@ BOOL CImageCanvas::OnEraseBkgnd(IRenderTarget *pRT)
 VOID CImageCanvas::OnMouseMove(UINT nFlags,SOUI::CPoint pt)
 {
 	SOUI::CRect rcTemp = GetClientRect();
-	__super::OnMouseMove(nFlags, pt);
+	SFreeMoveWindow::OnMouseMove(nFlags, pt);
 	if ( rcTemp != GetClientRect() )
 	{
 		EventCanvasWndMove evtHover(this);
