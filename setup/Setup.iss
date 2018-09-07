@@ -62,7 +62,7 @@ Name: "chinesesimp"; MessagesFile: "compiler:Languages\ChineseSimp.isl"
 [Files]
 Source: "..\bin\ImageView.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\bin\icon\*"; DestDir: "{app}\icon"; Flags: ignoreversion recursesubdirs
-Source: "..\bin\skinScreen\*"; DestDir: "{app}\skinScreen"; Flags: ignoreversion recursesubdirs
+;Source: "..\bin\skinScreen\*"; DestDir: "{app}\skinScreen"; Flags: ignoreversion recursesubdirs
 Source: "..\bin\skin\imageview.zip"; DestDir: "{app}\skin"; Flags: ignoreversion
 Source: "..\bin\cximagecrtu.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\bin\directui license.txt"; DestDir: "{app}"; Flags: ignoreversion
@@ -70,7 +70,7 @@ Source: "..\bin\directui license.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\bin\duilib license.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\bin\soui license.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\bin\FreeImage.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\bin\imScreen.exe"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "..\bin\imScreen.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\bin\msvcp100.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\bin\msvcr100.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\bin\cximagecrtu.dll"; DestDir: "{app}"; Flags: ignoreversion
