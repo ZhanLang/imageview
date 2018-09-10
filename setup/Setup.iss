@@ -3,8 +3,8 @@
 
 #include 'include\sapi\sapi.iss'
 #define MyAppName "快眼看图王"
-#define MyAppVersion "1.0.1.8"
-#define PacketID  	  1018 ;包ID
+#define MyAppVersion "1.0.1.9"
+#define PacketID  	  1019 ;包ID
 
 #define MyAppPublisher "极客工作室."
 #define MyAppURL "http://www.kantuwang.wang"

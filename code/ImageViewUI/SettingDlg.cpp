@@ -163,7 +163,9 @@ VOID CSettingDlg::OnApply()
 
 VOID CSettingDlg::OnUpdate()
 {
+	/*
 	msapi::ShellProcess(_T("update.exe"), NULL, TRUE);
+	*/
 }
 
 BOOL CSettingDlg::OnInitDialog(HWND wndFocus, LPARAM lInitParam)
