@@ -148,10 +148,10 @@ VOID CSettingDlg::OnApply()
 		if (checkBox && checkBox->IsChecked() )
 		{
 			SetDefProgram(
-				GetEnvParamString("productname"),
+				L"快眼看图王",
 				szModulePath,
 				lpszName,
-				GetEnvParamString("friendprodname"),
+				L"快眼看图王",
 				_T(""),
 				strCurPath + _T("\\icon\\") + extIco[nLoop].lpszIco);
 		}
