@@ -3,8 +3,8 @@
 
 #include 'include\sapi\sapi.iss'
 #define MyAppName "快眼看图王"
-#define MyAppVersion "1.0.2.1"
-#define PacketID  	  1021 ;包ID
+#define MyAppVersion "1.0.2.4"
+#define PacketID  	  1024 ;包ID
 
 #define MyAppPublisher "极客工作室."
 #define MyAppURL "http://www.kantuwang.wang"
@@ -153,7 +153,7 @@ var
   strExeName:String;
 begin
     oper:= '{#MyDefOper}';
-	strFileName := Format('快眼看图王_%s.tmp', ['{#MyAppVersion}']);
+	strFileName := Format('imageview_%s.tmp', ['{#MyAppVersion}']);
 	strExeName := ExtractFileName(ParamStr(0));
 	if strFileName = strExeName then
 	begin
