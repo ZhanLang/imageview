@@ -3,6 +3,7 @@
 
 #include 'include\sapi\sapi.iss'
 #define MyAppName "快眼看图王"
+#define MyEnAppName "ImageView"
 #define MyAppVersion "1.0.2.4"
 #define PacketID  	  1024 ;包ID
 
@@ -37,7 +38,7 @@ DefaultGroupName={#MyAppName}
 
 ;LicenseFile=License_cn.txt
 OutputDir=bin
-OutputBaseFilename={#MyAppName}_{#MyDefOper}_{#MyAppVersion}
+OutputBaseFilename={#MyEnAppName}_{#MyDefOper}_{#MyAppVersion}
 SetupIconFile=Logo.ico
 UninstallDisplayIcon   ={app}\{#MyAppExeName}
 Compression=lzma
@@ -83,8 +84,7 @@ Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
 Name: "{userdesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
 
 [Run]
-Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: runascurrentuser nowait postinstall skipifsilent
-
+Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: runascurrentuser nowait postinstall
 [InstallDelete]
 Name: {app}; Type: filesandordirs
 
@@ -153,7 +153,7 @@ var
   strExeName:String;
 begin
     oper:= '{#MyDefOper}';
-	strFileName := Format('imageview_%s.tmp', ['{#MyAppVersion}']);
+	strFileName := '{#MyAppName}' + '{#MyAppVersion}';
 	strExeName := ExtractFileName(ParamStr(0));
 	if strFileName = strExeName then
 	begin
