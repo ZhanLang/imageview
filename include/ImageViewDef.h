@@ -3,7 +3,7 @@
 #include <util/str_encode_embed.h>
 #include <AppDefiner.h>
 
-#define _Def_Version	L"1.0.2.4"
+#define _Def_Version	L"1.0.2.5"
 #define _Def_Packet		1024
 
 //update.jicer.cn

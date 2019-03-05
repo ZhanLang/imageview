@@ -86,6 +86,7 @@ HRESULT CImageViewUI::Init(void*)
 	}
 #else
 	ZIPRES_PARAM zipResParam;
+	zipResParam.pszChildDir = NULL;
 	zipResParam.pRenderFac = pRenderFactory;
 	zipResParam.type = ZIPRES_PARAM::ZIPFILE;
 
